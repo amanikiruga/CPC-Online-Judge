@@ -1,5 +1,24 @@
 .App {
   text-align: center;
+  width: clamp(800px,50%,600px);
+  margin: auto;
+  padding: 10px;
+  background-color: #61dafb;
+}
+
+.cpcLogo {
+  float:left;
+  height: 75px;
+  width: 75px;
+}
+
+.CPCOJhead {
+  font-family:'Courier New', Courier, monospace;
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .App-logo {

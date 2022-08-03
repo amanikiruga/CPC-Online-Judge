@@ -5,7 +5,7 @@ import { doc, getDoc, getDocs, getFirestore } from "firebase/firestore";
 import firestoreApp from "./firebase";
 import { collection, addDoc } from "firebase/firestore";
 
-import logo from "./logo.svg";
+import cpcLogo from "./cpcLogo.png";
 import "./App.css";
 type ProblemAndAnswer = {
     statement: string;
@@ -54,6 +54,7 @@ function App() {
 
     return (
         <div className="App">
+            <img className="cpcLogo" src={cpcLogo} alt="CPC Logo"/>
             <h1 className="text-3xl font-bold">CPC OJ</h1>
             <p>{problemsAndAnswer?.statement}</p>
             <form onSubmit={onAnswerSubmit}>
